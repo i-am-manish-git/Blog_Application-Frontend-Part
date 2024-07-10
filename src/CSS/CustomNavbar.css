@@ -1,0 +1,74 @@
+
+/* Navbar Container */
+.navbar {
+    background-color: rgb(169, 150, 154); /* Light background color */
+    padding: 0.5rem 0rem; /* Padding for spacing */
+  }
+  
+  /* Navbar Brand */
+  .navbar-brand {
+    font-size: 2rem; /* Larger font size for brand */
+    font-weight: bold; 
+    color: rgb(11, 2, 2);
+    font-style: italic; 
+    padding-left: 100px;
+    padding-right: 200px;
+  }
+
+  .nav{
+    padding-left: 200px;
+  }
+  
+  /* Navbar Toggler */
+  .navbar-toggler {
+    border: none; /* Remove default border */
+  }
+  
+  /* Navbar Toggler Icon */
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  /* Navbar Links */
+  .nav-link {
+    font-size: 1rem; /* Standard font size */
+    color: white; /* Dark color for text */
+    margin-right: 1rem; /* Margin between links */
+  }
+  
+  /* Navbar Links Hover State */
+  .nav-link:hover {
+    color: #111416; /* Black color on hover */
+    text-decoration: none; /* Remove underline on hover */
+  }
+  
+  /* Active Link State */
+  .nav-link.active {
+    font-weight: bold; /* Bold text for active link */
+    color: #0b1119; /* Blue color for active link */
+  }
+
+  /* Custom styles for DropdownItem */
+.dropdown-item {
+    color: #24272a; /* Dark color for text */
+    background-color:rgb(228, 202, 206); /* White background */
+    padding: 0.5rem 1rem; /* Padding for spacing */
+    transition: background-color 0.2s, color 0.2s; /* Smooth transition for hover effect */
+  }
+  
+  .dropdown-item:hover {
+    background-color:#efd4d4; /* Blue background on hover */
+    color: #ffffff; /* White text on hover */
+  }
+  
+  .dropdown-divider {
+    background-color: rgb(224, 191, 196); /* Light background for divider */
+    height: 1px; /* Height for divider */
+    margin: 0rem 0; /* Margin for spacing */
+  }
+  .dropdown-item.active {
+    color: #343a40 !important; /* Dark color for text */
+    background-color: #d6afaf !important; /* for override default colour(blue),the active class is still being applied to the NavLink components due to the default behavior of react-router-dom.*/
+  }
+  
+  

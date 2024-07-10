@@ -1,0 +1,81 @@
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Card */
+.card {
+  box-shadow: 0 4px 8px rgba(26, 1, 1, 0.763);
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.card-header {
+  background-color: #5da4f0;
+  color: rgb(57, 55, 55);
+  padding: 20px;
+  text-align: center;
+}
+
+.card-header h4 {
+  margin: 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+  margin-right: 50px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 0px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #adb9c6;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button */
+button[type="submit"] {
+  padding: 10px 15px;
+  background-color: #4d8fd5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.5s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
