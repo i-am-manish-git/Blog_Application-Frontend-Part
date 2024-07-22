@@ -1,4 +1,5 @@
 import CustomNavbar from "./CustomNavbar";
+import Footer from "./Footer";
 
 const Base=({title="Welcome to our website",children})=>{
     
@@ -8,7 +9,7 @@ const Base=({title="Welcome to our website",children})=>{
 
             {children}
 
-            <h1>This is a footer</h1>
+            <Footer/>
         </div>
     );
 };

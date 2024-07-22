@@ -1,0 +1,46 @@
+.footer {
+    background-color: rgb(200, 179, 169); /* Light background color matching navbar */
+    padding: 2rem 0; /* Padding for spacing */
+    color: white; /* White text color */
+    padding: 1px;
+  }
+  
+  .footer h5 {
+    font-size: 1.5rem; /* Font size for headings */
+    font-weight: bold; /* Bold text for headings */
+    margin-bottom: 1rem; /* Margin below headings */
+    color: #0b0202; /* Dark color for headings */
+  }
+  
+  .footer p {
+    font-size: 1rem; /* Standard font size */
+    margin-bottom: 1rem; /* Margin below paragraphs */
+    color: #111416; /* Dark color for text */
+  }
+  
+  .footer .nav {
+    padding-left: 0; /* Remove left padding */
+  }
+  
+  .footer .nav-link {
+    font-size: 1rem; /* Standard font size */
+    color: black; /* White text color for links */
+    margin-bottom: 0.5rem; /* Margin below links */
+  }
+  
+  .footer .nav-link:hover {
+    color: #0b0202; /* Dark color on hover */
+    text-decoration: none; /* Remove underline on hover */
+  }
+  
+  .footer .footer-text {
+    font-size: 0.875rem; /* Smaller font size for footer text */
+    margin-top: 1.5rem; /* Margin above footer text */
+    color: #0b0202; /* Dark color for footer text */
+    text-align: center; /* Center-align footer text */
+  }
+  
+  .footer .nav-item {
+    list-style: none; /* Remove default list styling */
+  }
+  
