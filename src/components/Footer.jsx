@@ -16,6 +16,7 @@ function Footer() {
     <footer className="footer">
       <Container>
         <Row>
+        {/* Contains three columns, each occupying 4 out of 12 grid columns (md="4") */}
           <Col md="4">
             <h5>About Us</h5>
             <p>
@@ -39,7 +40,7 @@ function Footer() {
               </NavItem>
             </Nav>
           </Col>
-          <Col md="4">
+          <Col md="4"> 
             <h5>Connect With Us</h5>
             <Nav vertical>
               <NavItem>

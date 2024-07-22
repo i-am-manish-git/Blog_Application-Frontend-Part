@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, CardBody, CardHeader, Container, FormGroup, Input, Label } from "reactstrap";
+import { Card, CardBody, CardHeader, Container, FormGroup, Input, Label, FormFeedback } from "reactstrap";
 import Base from "../components/Base";
 import '../CSS/Signup.css';
 import { signUp } from "../services/user-service";
@@ -17,9 +17,44 @@ const Signup = () => {
     isError: false
   });
 
+  // Validate form data
+  const validate = () => {
+    const errors = {};
+    let isValid = true;
+
+    if (!data.name.trim()) {
+      errors.name = "Name is required";
+      isValid = false;
+    }
+
+    if (!data.email.trim()) {
+      errors.email = "Email is required";
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(data.email)) {
+      errors.email = "Email address is invalid";
+      isValid = false;
+    }
+
+    if (!data.password.trim()) {
+      errors.password = "Password is required";
+      isValid = false;
+    } else if (data.password.length < 6) {
+      errors.password = "Password must be at least 6 characters long";
+      isValid = false;
+    }
+
+    setError({ errors, isError: !isValid });
+    return isValid;
+  };
+
   // Handle form submission
   const handleSubmit = async (event) => {
     event.preventDefault(); // Prevents the default form submission behavior
+
+    // Validate form before submission
+    if (!validate()) {
+      return; // If validation fails, do nothing
+    }
 
     // Show confirmation popup
     const userConfirmed = window.confirm("Are you sure you want to submit the form?");
@@ -65,7 +100,9 @@ const Signup = () => {
                   placeholder="Enter your name"
                   onChange={(e) => handleChange(e, 'name')}
                   value={data.name}
+                  invalid={!!error.errors.name}
                 />
+                <FormFeedback>{error.errors.name}</FormFeedback>
               </FormGroup>
 
               <FormGroup>
@@ -77,7 +114,9 @@ const Signup = () => {
                   placeholder="Enter your email"
                   onChange={(e) => handleChange(e, 'email')}
                   value={data.email}
+                  invalid={!!error.errors.email}
                 />
+                <FormFeedback>{error.errors.email}</FormFeedback>
               </FormGroup>
 
               <FormGroup>
@@ -89,7 +128,9 @@ const Signup = () => {
                   placeholder="Enter your password"
                   onChange={(e) => handleChange(e, 'password')}
                   value={data.password}
+                  invalid={!!error.errors.password}
                 />
+                <FormFeedback>{error.errors.password}</FormFeedback>
               </FormGroup>
 
               <FormGroup>

@@ -1,0 +1,41 @@
+.about-page {
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 3rem 0; /* Padding for spacing */
+  }
+  
+  .about-page h1 {
+    font-size: 2.5rem; /* Larger font size for main heading */
+    color: #0c0e0f; /* Dark color for text */
+    margin-bottom: 1rem; /* Margin below main heading */
+  }
+  
+  .about-page .lead {
+    font-size: 1.25rem; /* Larger font size for lead text */
+    color: #151718; /* Grey color for lead text */
+    margin-bottom: 2rem; /* Margin below lead text */
+  }
+  
+  .about-card {
+    background-color: #fff; /* White background for cards */
+    border: none; /* Remove border */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+    margin-bottom: 2rem; /* Margin below cards */
+  }
+  
+  .about-card h5 {
+    font-size: 1.5rem; /* Larger font size for card titles */
+    color: #3e4348; /* Dark color for card titles */
+  }
+  
+  .about-card p {
+    font-size: 1rem; /* Standard font size for card text */
+    color: #3e4348; /* Grey color for card text */
+  }
+  
+  .about-page h2 {
+    font-size: 2rem; /* Font size for subheadings */
+    color: #343a40; /* Dark color for subheadings */
+    margin-top: 2rem; /* Margin above subheadings */
+    margin-bottom: 1rem; /* Margin below subheadings */
+  }
+  
